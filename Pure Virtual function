@@ -20,6 +20,6 @@ int main ()
     Base *b;
     Child c;
     b=&c;
-    b->display();
-    c.display();
+    b->display();//call child class
+    c.display();//call child class
 }
