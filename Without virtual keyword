@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Base
+{
+    int x=0;
+    public:
+  void display()
+{
+      cout<<x;
+};
+class Child :public Base
+{
+    int y =4;
+    public:
+    void display()
+    {
+        cout<<y;
+    }
+};
+int main ()
+{
+   Base *b; // pointer object must call with ->
+    Child c;
+    b=&c;
+    b->display();  // 0
+    c.display();   //4
+}
